@@ -2,7 +2,7 @@
 
 ## Acknoledgment 
 
-Specialthanks to Prashant Pawan (Principal PMT - AWS ML - SageMaker Notebooks), Henri Yandell, Dennis Hills, 
+Special thanks to Prashant Pawan (Principal PMT - AWS ML - SageMaker Notebooks), Henri Yandell, Dennis Hills, 
 and Mobile Quickie for their contribution to iOS Amazon Rekognition starter source code
 
 Starter iOS Swift project code for identifying celebrities and label detection using Amazon Rekognition
