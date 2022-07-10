@@ -23,16 +23,9 @@ class Object {
     
     var boundingBox: [String:CGFloat]!
     
-    
     var name:String!
-    var urls:[String]!
-    
     var infoLink:String!
-    
-    var infoLabel: UILabel!
-    
     var infoButton:UIButton!
-    
     var scene: UIImageView!
     
     
@@ -41,19 +34,7 @@ class Object {
         let size = CGSize(width: self.boundingBox["width"]! * scene.layer.bounds.width, height:self.boundingBox["height"]!*scene.layer.bounds.height)
         let origin = CGPoint(x: self.boundingBox["left"]!*scene.layer.bounds.width, y: self.boundingBox["top"]!*scene.layer.bounds.height)
         
-        /*
-        *** Use this snippet if you want to draw a rectangle around the identified face***
-        //Create a rectangle layer
-        let rectangleLayer = CAShapeLayer()
-        rectangleLayer.borderColor = UIColor.green.cgColor
-        rectangleLayer.borderWidth = 2
-        rectangleLayer.frame = CGRect(origin: origin, size: size)
-        print(rectangleLayer.frame.origin)
-        print(rectangleLayer.frame.size)
-        ***
-         */
-        
-        
+  
         //Create and Populate info button
         self.infoButton = UIButton.init(frame: CGRect(origin: CGPoint(x: origin.x, y: origin.y+size.height*0.75), size: CGSize(width: 0.4*scene.layer.bounds.width, height: 0.05*scene.layer.bounds.height)))
         self.infoButton.backgroundColor = UIColor.black
@@ -72,4 +53,3 @@ class Object {
     
     
 }
-
